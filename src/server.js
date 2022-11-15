@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 const chatPostMessage = require("./functions/chatPostMessage");
+const lookupRandomCocktailName = require("./functions/lookupRandomCocktail");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
@@ -22,7 +23,10 @@ app.post("/", (req, res) => {
     // Event handling: the event "app_mention"
     if (req.body.event.type === "app_mention") {
         const channelID = req.body.event.channel;
-
-        chatPostMessage("Hi", channelID);
+        const drinkName = lookupRandomCocktailName();
+       
+        drinkName.then((drink) => {
+            chatPostMessage(drink, channelID);
+        });
     }
 });
