@@ -1,8 +1,8 @@
 {
   "name": "slack-cocktail-bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A useful Slack bot which suggests a cocktail for Today",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
