@@ -15,7 +15,7 @@ It's time to use this bot when you don't know what you feel like drinking tonigh
 
 ### Install ngrok
 
-1. Install ngrok
+1. Install [ngrok](https://ngrok.com/)
 
 ### Slack App setup
 
@@ -50,3 +50,4 @@ npm start
 
 - [Slack Web API chat.postMessage](https://api.slack.com/methods/chat.postMessage)
 - [The Cocktail DB](https://rapidapi.com/thecocktaildb/api/the-cocktail-db/)
+- [ngrok](https://ngrok.com/)
