@@ -1,5 +1,7 @@
 # Slack Cocktail Bot
 
+![](public/cocktailBot-demo.gif)
+
 ## Description
 
 This Slack bot picks one cocktail from numerous kinds for you.\
