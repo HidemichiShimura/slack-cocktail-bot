@@ -19,9 +19,16 @@ It's time to use this bot when you don't know what you feel like drinking tonigh
 
 ### Slack App setup
 
-1. Create an app on Slack
+1. Create an app on [Slack API](https://api.slack.com/)
 2. Set scopes
+   - app_mentions:read
+   - channels:read
+   - chat:write
+   - groups:read
+   - im:read
+   - mpim:read
 3. Subscribe events
+   - app_mention
 
 ### Slack Workspace/channel setup
 
