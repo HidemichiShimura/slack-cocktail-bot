@@ -9,7 +9,7 @@ It's time to use this bot when you don't know what you feel like drinking tonigh
 
 ## Built with
 
-Node
+![](public/icon-node.png)
 
 ## Installation on a local environment
 
