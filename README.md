@@ -44,7 +44,7 @@ git clone https://github.com/HidemichiShimura/slack-cocktail-bot
 
 ### Set environment variables
 
-1. Set environment variable of your local computer
+1. Set environment variable for Slack App Token and The Cocktail API key
 
 ```
 export AUTH=<Bot User OAuth Token>
