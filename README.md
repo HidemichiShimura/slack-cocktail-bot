@@ -54,7 +54,14 @@ export X_RAPIDAPI_KEY=<X-RapidAPI-Key>
 ## Usage
 
 1. Activate ngrok with Port 5000
+
+```
+ngrok http 5000
+```
+
 2. Set URL created by ngrok to Request URL on Slack API
+   ![](public/requestURL.png)
+
 3. Start app
 
 ```
