@@ -29,16 +29,26 @@ It's time to use this bot when you don't know what you feel like drinking tonigh
    - mpim:read
 3. Subscribe events
    - app_mention
+4. Add the app to a workspace
+5. Add the bot to a channel
 
-### Slack Workspace/channel setup
+### Subscribe to The Cocktail DB API
 
-1. Add the app to a workspace
-2. Add the bot to a channel
+1. Subscribe to The Cocktail DB API at [Rapid API](https://rapidapi.com/thecocktaildb/api/the-cocktail-db/)
 
 ### Clone the repository
 
 ```
 git clone https://github.com/HidemichiShimura/slack-cocktail-bot
+```
+
+### Set environment variables
+
+1. Set environment variable of your local computer
+
+```
+export AUTH=<Bot User OAuth Token>
+export X_RAPIDAPI_KEY=<X-RapidAPI-Key>
 ```
 
 ## Usage
@@ -56,5 +66,5 @@ npm start
 ## Documentation
 
 - [Slack Web API chat.postMessage](https://api.slack.com/methods/chat.postMessage)
-- [The Cocktail DB](https://rapidapi.com/thecocktaildb/api/the-cocktail-db/)
+- [Rapid API The Cocktail DB](https://rapidapi.com/thecocktaildb/api/the-cocktail-db/)
 - [ngrok](https://ngrok.com/)
