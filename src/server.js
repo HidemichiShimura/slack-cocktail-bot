@@ -1,8 +1,9 @@
-const express = require("express");
+import express from "express";
+import bodyParser from "body-parser";
+import dotenv from "dotenv";
+import { chatPostMessage } from "./functions/chatPostMessage.js";
+
 const app = express();
-const bodyParser = require("body-parser");
-const dotenv = require("dotenv");
-const chatPostMessage = require("./functions/chatPostMessage");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
