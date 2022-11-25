@@ -18,5 +18,6 @@
   "homepage": "https://github.com/HidemichiShimura/slack-cocktail-bot#readme",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "type": "module"
 }
