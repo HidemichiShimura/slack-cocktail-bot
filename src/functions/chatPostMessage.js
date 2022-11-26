@@ -3,18 +3,18 @@ const https = require("https");
 
 dotenv.config();
 
-function chatPostMessage(text, channel) {
-    const options = {
-        hostname: "slack.com",
-        port: 443,
-        path: "/api/chat.postMessage",
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": process.env.AUTH
-        }
-    };
+const options = {
+    hostname: "slack.com",
+    port: 443,
+    path: "/api/chat.postMessage",
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json",
+        "Authorization": process.env.AUTH
+    }
+};
 
+function chatPostMessage(text, channel) {
     const body = JSON.stringify({
         // Set the input text here
         text: text,
