@@ -1,5 +1,5 @@
-const dotenv = require("dotenv");
-const https = require("https");
+import dotenv from "dotenv";
+import https from "https";
 
 dotenv.config();
 
@@ -31,4 +31,4 @@ function chatPostMessage(text, channel) {
     request.end();
 }
 
-module.exports = chatPostMessage;
+export { chatPostMessage };
