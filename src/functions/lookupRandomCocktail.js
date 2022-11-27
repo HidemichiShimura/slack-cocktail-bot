@@ -1,5 +1,5 @@
-const dotenv = require("dotenv");
-const axios = require("axios");
+import dotenv from "dotenv";
+import axios from "axios";
 
 dotenv.config();
 
@@ -22,4 +22,4 @@ function lookupRandomCocktail (){
         });
 }
 
-module.exports = lookupRandomCocktail;
+export { lookupRandomCocktail };
