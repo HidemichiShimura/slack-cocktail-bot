@@ -24,7 +24,7 @@ app.post("/", (req, res) => {
     // Event handling: the event "app_mention"
     if (req.body.event.type === "app_mention") {
         const channelID = req.body.event.channel;
-        const drinkName = lookupRandomCocktailName();
+        const drinkName = lookupRandomCocktail();
        
         drinkName.then((drink) => {
             chatPostMessage(drink, channelID);
