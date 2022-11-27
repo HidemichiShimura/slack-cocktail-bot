@@ -2,8 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import { chatPostMessage } from "./functions/chatPostMessage.js";
-
-const lookupRandomCocktailName = require("./functions/lookupRandomCocktail");
+import { lookupRandomCocktail } from "./functions/lookupRandomCocktail.js";
 
 const app = express();
 
