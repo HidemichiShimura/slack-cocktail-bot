@@ -3,7 +3,7 @@ import axios from "axios";
 
 dotenv.config();
 
-function lookupRandomCocktail (){
+export function lookupRandomCocktail (){
     const options = {
         "port": null,
         "headers": {
@@ -21,5 +21,3 @@ function lookupRandomCocktail (){
             console.log(error);
         });
 }
-
-export { lookupRandomCocktail };
