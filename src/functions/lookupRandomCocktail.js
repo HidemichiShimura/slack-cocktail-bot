@@ -1,9 +1,9 @@
-const dotenv = require("dotenv");
-const axios = require("axios");
+import dotenv from "dotenv";
+import axios from "axios";
 
 dotenv.config();
 
-function lookupRandomCocktail (){
+export function lookupRandomCocktail (){
     const options = {
         "port": null,
         "headers": {
@@ -21,5 +21,3 @@ function lookupRandomCocktail (){
             console.log(error);
         });
 }
-
-module.exports = lookupRandomCocktail;
